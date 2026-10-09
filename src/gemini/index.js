@@ -9,7 +9,7 @@ async function run(prompt, chatHistory = []) {
     }
   });
   const chat = ai.chats.create({
-    model: "gemini-3.5-flash",
+    model: "gemini-3.5-flash-lite",
     history: history,
     config: {
       tools: [{ codeExecution: {} }],
